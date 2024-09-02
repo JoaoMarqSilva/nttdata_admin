@@ -1,0 +1,27 @@
+%parent-focus {
+  &:has(
+    a:focus, 
+    a:focus-within, 
+    a:focus
+  ) {
+    outline: 0.25rem solid $delightful-yellow;
+    z-index: 1;
+    a {
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+}
+
+
+a,
+.link {
+  color: $smart-navy;
+  &:hover {
+    color: $primary;
+  }
+}
